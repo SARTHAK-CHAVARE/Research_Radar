@@ -1,5 +1,5 @@
 # This file tells Git to IGNORE these files — never upload them 
-.env 
+
 __pycache__/ 
 *.pyc 
 *.docx 
