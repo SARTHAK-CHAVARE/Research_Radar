@@ -4,14 +4,14 @@ author: Bedant
 description: Fetches the 20 most recent AI and ML research papers from ArXiv.
 # ArXiv Paper Fetcher Skill
 ## What This Skill Does
-Calls the free ArXiv API to retrieve the latest 20 papers published in the Computer Science Artificial Intelligence (cs.AI) and Machine Learning (cs.LG) categories. Returns a clean JSON list of papers.
+Calls the free ArXiv API to retrieve the latest 30 papers published in the Computer Science Artificial Intelligence (cs.AI) and Machine Learning (cs.LG) categories. Returns a clean JSON list of papers.
 ## API Endpoint
 URL: https://export.arxiv.org/api/query
 Method: GET
 No API key required.
 ## Parameters
 search_query: cat:cs.AI+OR+cat:cs.LG+OR+cat:cs.CL
-max_results: 20
+max_results: 30
 sortBy: submittedDate
 sortOrder: descending
 ## Output Format

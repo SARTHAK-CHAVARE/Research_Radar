@@ -4,7 +4,7 @@ import xml.etree.ElementTree as ET
 ARXIV_URL = (
     'https://export.arxiv.org/api/query'
     '?search_query=cat:cs.AI+OR+cat:cs.LG+OR+cat:cs.CL'
-    '&max_results=20'
+    '&max_results=40'
     '&sortBy=submittedDate'
     '&sortOrder=descending'
 )

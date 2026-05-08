@@ -23,19 +23,23 @@ def summarize_paper(title, abstract):
     short_abstract = abstract[:1200]
 # This is the prompt — the instruction we give to the AI
     prompt = f"""
-You are a research assistant helping CS students understand AI papers.
-Summarize this paper using EXACTLY this format (no extra text):
+You are a research assistant. Analyze this paper and return ONLY valid JSON, no markdown, no extra text.
 
-**What:** [one sentence: what did they build or discover?]
-**How:** [one sentence: what technique or method did they use?]
-**Why it matters:** [one sentence: why should a student care?]
-**Novelty score:** [number from 1 to 10] — [one sentence explaining the score]
+{{
+  "one_line": "one sentence summary",
+  "what": "what they built (max 30 words)",
+  "how": "method used (max 30 words)",
+  "why": "why it matters (max 30 words)",
+  "novelty_score": 7,
+  "novelty_reason": "one sentence",
+  "key_claim": "the single most important claim",
+  "has_code": true or false,
+  "tags": ["LLM", "RAG"]
+}}
 
-Paper title: {title}
+Title: {title}
 Abstract: {short_abstract}
-
-Keep each point under 35 words. Be specific and clear.
-    """
+"""
 
     try:
         # Send the prompt to Groq and get a response

@@ -90,3 +90,28 @@ The system:
    ┌──────▼──────┐              ┌──────▼──────┐
    │ Telegram    │              │ Gmail SMTP  │
    └─────────────┘              └─────────────┘
+```
+
+---
+
+# 📁 Submission Assets
+
+All submission-related files are stored inside the `assets/` folder.
+
+```text
+assets/
+│
+├── PPT/
+│   └── ResearchRadar_Presentation.pptx
+│
+├── AI_Disclosure/
+│   └── AI_Disclosure_Form.pdf
+│
+├── Demo_Video/
+│   └── ResearchRadar_Demo.mp4
+```
+
+The folder contains:
+- Final presentation slides
+- AI disclosure documentation
+- Project walkthrough/demo video
